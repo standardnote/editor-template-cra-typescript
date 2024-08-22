@@ -45,12 +45,11 @@ export default class Editor extends React.Component<{}, EditorInterface> {
         });
       },
       clearUndoHistory: () => {},
-      getElementsBySelector: () => [],
+      handleRequestForContentHeight: () => undefined,
     };
 
     this.editorKit = new EditorKit(delegate, {
       mode: 'plaintext',
-      supportsFileSafe: false,
     });
   };
 
